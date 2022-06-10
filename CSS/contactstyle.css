@@ -1,0 +1,164 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    font-family: sans-serif !important;
+    /*text-align:center;*/
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*/////////////////////////// Nav Bar ///////////////////////////////////////////*/
+nav{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000428,#004e92 );  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000428,#004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:white;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.favicon{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+.favicon img{
+    height: 80%;
+    width: 80%;
+    border-radius: 5px;
+}
+
+nav ul li{
+    float: left;
+    list-style: none; 
+    margin: 0px;
+    padding:10px;
+    display:block;
+    width:140px;
+    text-decoration: none;
+    font-size:20px;
+    
+}
+nav ul li a:hover{
+    color: #1fff00;
+}
+nav ul li a{
+    display: inline-block;
+    color:white;
+    padding:4px 5px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul ul{position: absolute; top: 100%; background-color: #9fec72; display: none;}
+
+/*/////////////////////////////////////// NAVBAR END //////////////////////////////////*/
+
+.box{
+    background-color: #801851;
+    width: 50%;
+}
+.content{
+    text-align:center;
+    margin: 20px auto;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+h2{
+    margin-bottom: 5px;
+}
+.main-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+.container1, .container2, .container3{
+    display: block;
+    width: 100%;
+    top:30%;
+    left:5%;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.details h3{
+    margin: 5px 0px;
+}
+
+.contactForm
+{
+   text-align: center;
+    width:50%;
+    height:300px;
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactForm form{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contactForm div{
+    width: 100%;
+}
+.contactForm h2{
+    width: 100%;
+}
+.contactForm span, .contactForm input, .contactForm textarea{
+    width: 45%;
+    margin: 5px 0px;
+    padding: 5px;
+}
+.contactForm span{
+    font-weight: bold;
+}
+.background-img{
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    left: 0px;
+    opacity: 40%;
+    margin-top: -80px;
+}
+
+button{
+    margin:5px;
+    border:0px;
+    width:100px;
+    height:36px;
+    background-color: #000428;
+    border-radius:10px; 
+    color:#1fff00;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1400px){
+    .background-img{
+        height: 130vh;
+    }
+}

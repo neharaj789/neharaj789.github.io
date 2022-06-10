@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="CSS/cover-c.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Planner</title>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png">
+    <link rel="stylesheet" href="CSS/style1.css">
+</head>
+
+<body>
+    <nav>
+        <div class="favicon"><img src="CSS/cover-f.png"></div>
+        <ul>
+            <li><a href="./index.html" class="Mynav">Home</a></li>
+            <li><a href="./dietplan.html" class="Mynav">Diet Plans</a></li>
+            <li><a href="./food.html" class="Mynav">Food Calorie</a></li>
+            <li><a href="./about.html" class="Mynav">About</a></li>
+            <li><a href="./contact.html" class="Mynav">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- new tables -->
+
+
+        <span>
+            <h2>Filter For Diet Plans</h2>
+            <div id="filter">
+
+                <select name="age_group" id="age_group">
+                    <option value="1_to_3" selected="true">1 - 3</option>
+                    <option value="3_to_12">3 - 12</option>
+                    <option value="13_to_19">13 - 19</option>
+                    <option value="20_to_60">20 - 60</option>
+                    <option value="60_and_above">60 and above</option>
+                </select>
+
+                <!-- veg , non-veg filter -->
+                <select name="diet_type" id="diet_type">
+                    <option value="veg" selected="true">Veg</option>
+                    <option value="non_veg"> Non - Veg</option>
+                </select>
+
+                <button onclick="show_diet()" id="show_diet_button"> Show Diet</button>
+
+            </div>
+        </span>
+        <!--for 1-3 year old child-->
+        <!--veg diet -->
+        <table class="all_diet 1_to_3 veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Early</td>
+                <td>Milk with horlicks/complan...etc</td>
+                <td>1 glass</td>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>Daliya ,banana </td>
+                <td>1 plate,1 </td>
+            </tr>
+            <tr>
+                <td>Mid morning</td>
+                <td>Fruit </td>
+                <td>1 fruit</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Rice/chapati, Rajma curry/vegetable,dal</td>
+                <td>1 katori/1-2,1/2 katori , 1 katori </td>
+            </tr>
+            <tr>
+                <td>Evening Tea</td>
+                <td>Milk + buiscuit</td>
+                <td>150ml , 4-6 buiscuits</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>dal,vegetable , chapati/rice , Salad</td>
+                <td>1 katori,1/2 katori,1-2/1 katori</td>
+            </tr>
+            <tr>
+                <td>Bed time</td>
+                <td>Fruit custard/milk with turmeric</td>
+                <td> katori</td>
+            </tr>
+        </table>
+        <!--non veg diet -->
+        <table class="all_diet 1_to_3 non_veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Early</td>
+                <td>Milk with horlicks/complan...etc</td>
+                <td>1 glass</td>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>Toast with scrambled egg (bhurji) </td>
+                <td>1 plate </td>
+            </tr>
+            <tr>
+                <td>Mid morning</td>
+                <td>Fruit </td>
+                <td>1 fruit</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Rice/chapati, Fish cutlt/egg curry</td>
+                <td>1 katori/1-2, , 1 katori </td>
+            </tr>
+            <tr>
+                <td>Evening Tea</td>
+                <td>Milk + buiscuit</td>
+                <td>150ml , 4-6 buiscuits</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>chicken (boneless) , chapati/rice , Salad</td>
+                <td>1 katori,1-2/1 katori</td>
+            </tr>
+            <tr>
+                <td>Bed time</td>
+                <td>Fruit custard/milk with turmeric</td>
+                <td> katori</td>
+            </tr>
+        </table>
+
+        <!--for 3-12 year-->
+        <!--veg diet -->
+        <table class="all_diet 3_to_12 veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Early</td>
+                <td>Milk with sugar,soaked almonds</td>
+                <td>1 glass,2-3</td>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>Paratha with curd </td>
+                <td>1-2 paratha </td>
+            </tr>
+            <tr>
+                <td>Mid morning</td>
+                <td>Fruit or fruit juice</td>
+                <td>1 fruit / 1 glass</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Rice , Mixed vegetables , curd chapati</td>
+                <td>Small plate , Small katori , 1/2 katori , 1-2 </td>
+            </tr>
+            <tr>
+                <td>Evening Tea</td>
+                <td>Milk + buiscuit</td>
+                <td>150ml , 4-6 buiscuits</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>Dal , chapati , Salad</td>
+                <td>1 katori,2</td>
+            </tr>
+            <tr>
+                <td>Bed time</td>
+                <td>Fruit custard</td>
+                <td>1 katori</td>
+            </tr>
+        </table>
+        <!--non veg diet  for child(3-12)-->
+        <table class="all_diet 3_to_12 non_veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Early</td>
+                <td>Milk with sugar,soaked almonds</td>
+                <td>1 glass,2-3</td>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td> vegetable omlet ,toast</td>
+                <td> 1-2 egg,2 slice </td>
+            </tr>
+            <tr>
+                <td>Mid morning</td>
+                <td>Fruit or fruit juice</td>
+                <td>1 fruit / 1 glass</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Rice , Mixed vegetables , mutton curry/pan seared fish/egg curry chapati</td>
+                <td>Small plate , Small katori , 1 katori , 1-2 </td>
+            </tr>
+            <tr>
+                <td>Evening Tea</td>
+                <td>Milk + buiscuit</td>
+                <td>150ml , 4-6 buiscuits</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>chicken and vegetable stew , chapati , Salad</td>
+                <td>1 katori,2</td>
+            </tr>
+            <tr>
+                <td>Bed time</td>
+                <td>Fruit custard/milk</td>
+                <td>1 katori,1 glass</td>
+            </tr>
+        </table>
+        <!-- age group 13-19 -->
+        <!--veg diet -->
+        <table class="all_diet 13_to_19 veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>Sandwitch and Milk Or omlet bread</td>
+                <td>2 , 1 cup , Egg with 2 slice</td>
+            </tr>
+            <tr>
+                <td>Mid morning</td>
+                <td>Stuffed parantha paneer And one fruit</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Rice , curd , Mixed vegetables</td>
+                <td>1 Small plate , Small katori , 1/2 katori</td>
+            </tr>
+            <tr>
+                <td>Evening Snacks</td>
+                <td>Milk or cold coffe with buiscuit</td>
+                <td>1 cup , 4-6 </td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>Dal/meat vegetables , chapati</td>
+                <td>Small katori , 1/2 katori , 2</td>
+            </tr>
+            <tr>
+                <td>Night</td>
+                <td>Fruit custard/ice cream</td>
+                <td>1 katori</td>
+            </tr>
+        </table>
+        <!--non veg diet for (13-19) -->
+        <table class="all_diet 13_to_19 non_veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td> boiled egg,orange juice</td>
+                <td>2 , 1 glass</td>
+            </tr>
+            <tr>
+                <td>Mid morning</td>
+                <td>seasonal fruit</td>
+                <td>1-2</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Rice , chapati,salad, chicken/mutton/fish/egg</td>
+                <td>1 Small plate ,2-3, Small plate , 1 katori</td>
+            </tr>
+            <tr>
+                <td>Evening Snacks</td>
+                <td>Milk or cold coffe with buiscuit</td>
+                <td>1 cup , 4-6 </td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>roasted chicken/grilled fish/ baked chicken breas,brown rice, chapati</td>
+                <td>1 katori , 1/2 katori , 2</td>
+            </tr>
+            <tr>
+                <td>Night</td>
+                <td>fruit punch</td>
+                <td>1 cup</td>
+            </tr>
+        </table>
+        <!--for adult 20-60 -->
+        <!--veg diet-->
+        <table class="all_diet 20_to_60 veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Early Morning</td>
+                <td>Milk with sugar or tea </td>
+                <td>1 cup</td>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td> Paratha with curd , coffe</td>
+                <td> 2 bread , 2 paratha</td>
+            </tr>
+            <tr>
+                <td>Mid Day</td>
+                <td>Fruit chatt or Fruit juice or Tea with buscuits</td>
+                <td>1 cup , 4-6</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Vegetables , chapati , Rice , curd , salad</td>
+                <td>1 katori , 2 , 1 plate , 1 katori , mixed </td>
+            </tr>
+            <tr>
+                <td>Evening Tea</td>
+                <td>Tea with snacks</td>
+                <td>1 cup</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>Dal/Rajama , Vegetables , chapati</td>
+                <td>1 katori,1 katori,3</td>
+            </tr>
+            <tr>
+                <td>Bed time</td>
+                <td>Kheer</td>
+                <td>1 katori</td>
+            </tr>
+        </table>
+        <!--non veg diet-->
+
+        <table class="all_diet 20_to_60 non_veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Early Morning</td>
+                <td>Milk with sugar or without sugar ,soaked alomonds </td>
+                <td>1 cup,5-6</td>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>Egg with bread coffe/tea</td>
+                <td>1 egg , 2 bread , 2 paratha</td>
+            </tr>
+            <tr>
+                <td>Mid Day</td>
+                <td>Fruit chatt or Fruit juice or Tea with buscuits</td>
+                <td>1 cup , 4-6</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>chicken/mutton/fish , chapati , Rice , curd , salad</td>
+                <td>4-5 peice , 2 , 1 plate , 1 katori , mixed </td>
+            </tr>
+            <tr>
+                <td>Evening Tea</td>
+                <td>chicken sausage/scrambled eggs/chicken salad</td>
+                <td>3-4 pcs/2/1 small plate</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>fish curry/grilled chicken/muttton ,dal , chapati</td>
+                <td>i and 1/2 katori/4-5 pcs ,1 katori,3</td>
+            </tr>
+            <tr>
+                <td>Bed time</td>
+                <td>soup</td>
+                <td>1 katori</td>
+            </tr>
+        </table>
+        <!--for old age above 60-->
+        <!--veg diet -->
+        <table class="all_diet 60_and_above veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Early Morning</td>
+                <td>tulsi tea ,soaked almonds </td>
+                <td>1 cup,5-6</td>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>dalia/cheela(beasn/moong),milk or tea</td>
+                <td>1 plate,1 cup</td>
+            </tr>
+            <tr>
+                <td>Mid Day</td>
+                <td>Fruit chatt or Fruit juice or Tea with buscuits</td>
+                <td>1 cup , 4-6</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Vegetables , chapati , Rice , curd , salad</td>
+                <td>1 katori , 2 , 1 plate , 1/2 katori , mixed </td>
+            </tr>
+            <tr>
+                <td>Evening Tea</td>
+                <td>Tea with snacks</td>
+                <td>1 cup</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>Dal/Rajama , Vegetables , chapati</td>
+                <td>1 katori,1/2 katori,2</td>
+            </tr>
+            <tr>
+                <td>Bed time</td>
+                <td>Kheer</td>
+                <td>1 katori</td>
+            </tr>
+        </table>
+        <!--non veg diet-->
+        <table class="all_diet 60_and_above non_veg">
+            <tr>
+                <th id="heading-1">Meal</th>
+                <th id="heading-2">Food</th>
+                <th id="heading-3">Quantity</th>
+            </tr>
+            <tr>
+                <td>Early Morning</td>
+                <td>tulsi tea ,soaked almonds </td>
+                <td>1 cup,5-6</td>
+            </tr>
+            <tr>
+                <td>Breakfast</td>
+                <td>vegetable omlette,milk or tea</td>
+                <td>1 egg,1 cup</td>
+            </tr>
+            <tr>
+                <td>Mid Day</td>
+                <td>Fruit chatt or Fruit juice</td>
+                <td>1 cup , 4-6</td>
+            </tr>
+            <tr>
+                <td>Lunch</td>
+                <td>Vegetables , chicken/mutton/fish, chapati , Rice , salad</td>
+                <td>1/2 katori , 2-3pcs , 2 , 1/2 katori , mixed </td>
+            </tr>
+            <tr>
+                <td>Evening Tea</td>
+                <td>tea,Chicken sausage/ Scrambled egg/Poached egg/Boiled egg/Chicken Salad </td>
+                <td>1 cup,2-3/2 eggs/small plate</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>grilled or roasted chciken/fish , Vegetables , chapati</td>
+                <td>1 katori,1/2 katori,2</td>
+            </tr>
+            <tr>
+                <td>Bed time</td>
+                <td>milk with 1 tsp turmeric</td>
+                <td>1 cup</td>
+            </tr>
+        </table>
+    </main>
+    <script src="JavaScript/API.js"></script>
+    <script src="JavaScript/script2.js"></script>
+    <script src="JavaScript/script3.js"></script>
+</html>

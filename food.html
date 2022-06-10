@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="CSS/cover-c.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Diet Planner</title>
+    <link rel="stylesheet" href="CSS/foodstyles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="favicon"><img src="CSS/cover-f.png"></div>
+        <ul>
+            <li><a href="./index.html" class="Mynav">Home</a></li>
+            <li><a href="./dietplan.html" class="Mynav">Diet Plans</a></li>
+            <li><a href="./food.html" class="Mynav">Food Calorie</a></li>
+            <li><a href="./about.html" class="Mynav">About</a></li>
+            <li><a href="./contact.html" class="Mynav">Contact</a></li>
+
+        </ul>
+    </nav>
+    <img class="background-img" src="CSS/bg6.jpg">
+    <div class="section-box">
+        <div class="left-div">
+            <label for="item_to_calorie"> Ingredients</label>
+            <p>Research have proven that adequate dietary carbohydrates need to be consumed on a daily foundation,
+                particularly after exercising, to restore ranges of carbohydrates (glycogen) stored in the frame's
+                muscle mass and liver, which, because the desired gasoline for most styles of exercise, is needed for
+                athletic overall performance. whilst you use the calorie database to understand how your frame gets
+                strength from your favorite food and snacks, paying precise attention to the variety of energy in meals
+                you’ve eaten, you’ll be empowered to make dietary choices that never leave you with guilt (or a spare
+                tire). <br> To get started out, browse the food classes under to locate the calorie chart and dietary
+                records of your contemporary meal or its ingredients. </p>
+            <div class="input-box">
+                <input type="text" name="item" value="Banana" placeholder="eg. Banana" id="item"
+                    onclick="Show_Calorie()">
+            </div>
+            <div id="item_to_calorie"></div>
+        </div>
+
+        <!-- Fitness Meter -->
+        <div class="right-div">
+            <fieldset>
+                <legend> Fitness Meter </legend>
+                <p>You possibly have some idea of ways fit you are. however knowing the specifics will let you set
+                    realistic fitness dreams, display your development and keep your motivation. Trying out fitness
+                    meter is a splendid way to screen and check the capability of an individual as it relates to cardio
+                    fitness, energy, and flexibility. It may also assist an individual to understand how wholesome they
+                    are and learn to set desires to enhance their health-associated fitness. <br> A fitness meter is an
+                    application for tracking and monitoring health-related metrics consisting of distance walked or run,
+                    calorie intake, and in a few cases heartbeat. </p>
+                <label for="age">Age</label>
+                <input type="number" value="">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                </select>
+                <label for="heigth">Height</label>
+                <input type="number" value="" placeholder="height in cm">
+                <label for="weight">Weight</label>
+                <input type="number" value="" placeholder="weight in Kg">
+                <label for="Exercise">Activity Level</label>
+                <input type="number" value="" title="
+                1 : BMR
+                2 : Sedentary: little or no exercise
+                3 : Exercise 1-3 times
+                4 : Exercise 4-5 times
+                5 : Daily exercise or intense exercise 3-4 times
+                6 : Intense exercise 6-7 times
+                7 : Very intense exercise daily, or physical job">
+
+                <label for="">Do you want</label>
+                <select name="fitness" id="selected_weight">
+                    <option value="Extreme weight gain">Weight gain 1 Kg</option>
+                    <option value="Weight gain ">Weight gain .50Kg </option>
+                    <option value="Mild weight gain">Weight gain .25Kg</option>
+                    <option value="Mild weight loss">Weight loss .25Kg</option>
+                    <option value="Weight loss">Weight loss .50Kg</option>
+                    <option value="Extreme weight loss">Weight loss 1 Kg</option>
+                </select>
+                <div class="button-div">
+                    <button id="fitness_button" onclick="fitness_calory()">OK</button>
+                    <h2 id="fitness_calorie"></h2>
+                </div>
+
+
+
+            </fieldset>
+        </div>
+    </div>
+    <p id="root"></p>
+    <p id="root2"></p>
+    <p id="root3"></p>
+    <p id="root4"></p>
+
+    <script src="JavaScript/API.js"></script>
+    <script src="JavaScript/script2.js"></script>
+</body>
+<footer id="footer">
+    <p>&copy; | Diet Planner | 2021 </p>
+</footer>
+
+</html>
